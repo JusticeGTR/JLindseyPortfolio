@@ -1,4 +1,66 @@
-.App {
+body {
+  font-family: 'Raleway', sans-serif;
+  /* background-color: black; */
+}
+
+nav {
+  z-index: 1;
+}
+
+#headerPic {
+  height: auto;
+  width:100%;
+  margin: -800px 0 0 0;
+  z-index: -1;
+  position: relative;
+}
+
+.scroll-text {
+  color:rgb(217, 142, 172);
+  position: absolute;
+  top:95%;
+  left:50%;
+  border: 1px solid rgb(217, 142, 172);
+}
+
+.body-bg {
+  position: absolute;
+  top:105%;
+  width: 100%;
+  height:100%;
+  background-color:#846d95;
+  opacity:75%
+}
+/* body, html {
+  height: 100%;
+  
+  margin: 0;
+}
+
+.bg {
+
+  background-image: url("./src/components/Header/20200602_212937_1.gif    ");
+
+
+  height: 100%;  
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
+
+@keyframes background-stretch {
+    0% {
+      transform: scale(0, .025)
+    }
+
+    100% {
+      transform: scale1, .025
+    }
+}
+
+
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +97,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
