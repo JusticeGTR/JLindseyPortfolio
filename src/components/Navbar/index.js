@@ -3,17 +3,17 @@ import React from "react";
 
 export function Navbar() {
     return (
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="/">JLindsey</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="navbar">
+        <a className="navbar-brand" href="/">JLindsey</a>
+        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span className="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-link" href="#">Work <span class="sr-only">(current)</span></a>
-            <a class="nav-link" href="#">About</a>
-            <a class="nav-link" href="#">Contact</a>
-            <a class="nav-link" href="#">Resume</a>
+        <div className="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+          <div className="navbar-nav">
+            <a className="nav-link" href="#work">Work <span className="sr-only">(current)</span></a>
+            <a className="nav-link" href="#about">About</a>
+            <a className="nav-link" href="#contact">Contact</a>
+            <a className="nav-link" href="#resume">Resume</a>
           </div>
         </div>
       </nav>
