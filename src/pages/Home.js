@@ -3,9 +3,9 @@ import Header from "../components/Header";
 import Navbar from "../components/Navbar";
 import About from "../components/About";
 import Work from "../components/Work";
-// import Contact from "../components/Contact";
+import Contact from "../components/Contact";
 // import Resume from "../components/Resume";
-// import Footer from "../components/Footer";
+import Footer from "../components/Footer";
 
 
 function Home() {
@@ -16,9 +16,9 @@ function Home() {
     <div className="container content">
     <About/> 
     <Work/>
-    {/* <Contact/> */}
+    <Contact/>
     {/* <Resume/> */}
-    {/* <Footer/>  */}
+    <Footer/> 
     </div>
     </>
   );

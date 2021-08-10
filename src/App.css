@@ -2,57 +2,97 @@
   font-family: 'Raleway', sans-serif;
 }
 
-html {
+/* html {
   background:url('./components/Header/20200602_213040.jpg');
   background-size:cover;
   min-width: 1000px;
-  margin: -400px 0 0 0;
-  /* background-position: center; */
-  
-}
+  margin: -400px 0 0 0;  
+} */
 
-nav {
+/* nav {
   z-index: 1;
-}
+} */
 
-#headerPic {
+/* #headerPic {
   height: auto;
   width:100%;
   margin: -800px 0 0 0;
   z-index: -2;
   position: relative;
-}
+} */
 
-.scroll-text {
+/* .scroll-text {
   color:rgb(217, 142, 172);
   position: absolute;
   top:95%;
   left:50%;
   border: 1px solid rgb(217, 142, 172);
-}
+} */
 
-.bodyBg {
+/* .bodyBg {
   position: absolute;
   top:120%;
   width: 100%;
   height:100%;
   background-color:#846d95;
   opacity:0;
-  /* transform:scale(1.2); */
   z-index: -1;
-}
+} */
 
-@media (prefers-reduced-motion: no-preference) {
+/* @media (prefers-reduced-motion: no-preference) {
 .bodyBg {
   transition: opacity .5s ease-in, transform .5s ease-in;
 }
-}
+} */
 
-.showOnScroll{
+/* .showOnScroll{
   opacity: 1;
   transform: none;
+} */
+
+/* .sectionTitle {
+  text-orientation: upright;
+} */
+
+/* start of gallery attempt */
+
+/* #photos {
+  line-height: 0;
+   
+  -webkit-column-count: 3;
+  -webkit-column-gap:   0px;
+  -moz-column-count:    3;
+  -moz-column-gap:      0px;
+  column-count:         3;
+  column-gap:           0px;  
 }
 
-.sectionTitle {
-  text-orientation: upright;
+#photos img {
+  width: 100% !important;
+  height: auto !important;
 }
+
+@media (max-width: 800px) {
+  #photos {
+  -moz-column-count:    2;
+  -webkit-column-count: 2;
+  column-count:         2;
+  }
+}
+@media (max-width: 400px) {
+  #photos {
+  -moz-column-count:    1;
+  -webkit-column-count: 1;
+  column-count:         1;
+  } 
+}*/
+
+/* end of gallery attempt */
+
+/* .contactList {
+  list-style: none;
+} */
+
+/* .footer{
+  justify-content: center;
+} */

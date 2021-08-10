@@ -27,7 +27,7 @@ export function Header() {
         <img src={headerPic}
           alt="Hazy sunset over glass-like ocean" id="headerPic" />
       </header> */}
-      <p className="scroll-text showOnScroll">&#8595; scroll &#8595;</p>
+      <p className="scroll-text">&#8595; scroll &#8595;</p>
       <div className="bodyBg showOnScroll"></div>
     </section>
   )
