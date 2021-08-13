@@ -1,5 +1,8 @@
 import React from "react";
+import headerPic from "./headerEdit.jpg";
 // import headerPic from "./20200602_213040.jpg";
+// import headerPic from "./20200602_213325_1.gif";
+
 
 window.addEventListener("load", () => {
 
@@ -23,10 +26,10 @@ window.addEventListener("load", () => {
 export function Header() {
   return (
     <section>
-      {/* <header className="row">
+      <header className="row">
         <img src={headerPic}
           alt="Hazy sunset over glass-like ocean" id="headerPic" />
-      </header> */}
+      </header>
       <p className="scroll-text">&#8595; scroll &#8595;</p>
       <div className="bodyBg showOnScroll"></div>
     </section>

@@ -9,7 +9,7 @@ import employee from "./images/EmployeeDirectory.png"
 
 export function Work() {
     return (
-        <section className="" id="work photos">
+        <section className="bodySpace" id="work">
                                 {/* <a href="https://github.com/jjayjack/FoodiesUnite"><img src={eats} alt="" className="" /></a>
                                 <a href="https://github.com/melanieuhrich/Rate-My-Workplace"><img src={rank} alt="" className="" /></a>
                                 <a href="https://levickane.github.io/expensetracker/"><img src={expense} alt="" className="" /></a>
@@ -17,34 +17,34 @@ export function Work() {
                                 <a href="https://github.com/JusticeGTR/EmployeeDirectory"><img src={employee} alt="" className="" /></a>
                                 <a href="https://github.com/JusticeGTR/FitnessTracker"><img src={fitness} alt="" className="" /></a> */}
 
-            <div class="row no-gutters">
-                <div class="col-sm-3">
-                    <p class="sectionTitle">Work</p>
+            <div className="row no-gutters">
+                <div className="col-sm-3">
+                    <p className="sectionTitle">Work</p>
                 </div>
-                <div class="col-sm-9">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <a href="https://github.com/jjayjack/FoodiesUnite"><img src={eats} alt="" className="" /></a>
+                <div className="col-sm-9">
+                    <div className="container">
+                        <div className="row">
+                            <div className="col-sm-6">
+                                <a href="https://github.com/jjayjack/FoodiesUnite"><img src={eats} alt="" className="workImage" /></a>
                             </div>
-                            <div class="col-sm-6">
-                                <a href="https://github.com/melanieuhrich/Rate-My-Workplace"><img src={rank} alt="" className="" /></a>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <a href="https://levickane.github.io/expensetracker/"><img src={expense} alt="" className="" /></a>
-                            </div>
-                            <div class="col-sm-6">
-                                <a href="https://github.com/JusticeGTR/RandomPasswordGenerator"><img src={random} alt="" className="secondWork" /></a>
+                            <div className="col-sm-6">
+                                <a href="https://github.com/melanieuhrich/Rate-My-Workplace"><img src={rank} alt="" className="workImage" /></a>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <a href="https://github.com/JusticeGTR/EmployeeDirectory"><img src={employee} alt="" className="secondWork" /></a>
+                        <div className="row">
+                            <div className="col-sm-6">
+                                <a href="https://levickane.github.io/expensetracker/"><img src={expense} alt="" className="workImage" /></a>
                             </div>
-                            <div class="col-sm-6">
-                                <a href="https://github.com/JusticeGTR/FitnessTracker"><img src={fitness} alt="" className="secondWork" /></a>
+                            <div className="col-sm-6">
+                                <a href="https://github.com/JusticeGTR/RandomPasswordGenerator"><img src={random} alt="" className="workImage" /></a>
+                            </div>
+                        </div>
+                        <div className="row">
+                            <div className="col-sm-6">
+                                <a href="https://github.com/JusticeGTR/EmployeeDirectory"><img src={employee} alt="" className="workImage" /></a>
+                            </div>
+                            <div className="col-sm-6">
+                                <a href="https://github.com/JusticeGTR/FitnessTracker"><img src={fitness} alt="" className="workImage" /></a>
                             </div>
                         </div>
                     </div>

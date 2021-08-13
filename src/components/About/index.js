@@ -3,7 +3,7 @@ import profile from "./79226454.jpg"
 
 export function About() {
     return (
-        <section id="about">
+        <section className="bodySpace" id="about">
                 <div className="row">
                     <div className="col">
                         <p className="sectionTitle">About</p>
