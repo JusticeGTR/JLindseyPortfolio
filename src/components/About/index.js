@@ -1,15 +1,34 @@
 import React from "react";
 import profile from "./79226454.jpg"
 
+window.addEventListener("load", () => {
+
+    const bodyBg = document.querySelector('.offScroll');
+    bodyBg.classList.remove('showOnScroll');
+  
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          bodyBg.classList.add('showOnScroll');
+          return;
+        }
+  
+        bodyBg.classList.remove('showOnScroll');
+      });
+    });
+  
+    observer.observe(document.querySelector('.offScroll'));
+  });
+
 export function About() {
     return (
-        <section className="bodySpace" id="about">
+        <section className="bodySpace offScroll showOnScroll" id="about">
                 <div className="row">
                     <div className="col">
                         <p className="sectionTitle">About</p>
                     </div>
                     <div className="col">
-                        <img src={profile} alt="Justin with his dog, Charlotte, resting her head on his shoulder" />
+                        <img src={profile} alt="Justin with his dog, Charlotte, resting her head on his shoulder" className="offScroll showOnScroll"/>
                     </div>
                     <div className="col">
                         <div className="card-body">

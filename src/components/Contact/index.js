@@ -1,8 +1,27 @@
 import React from "react";
 
+window.addEventListener("load", () => {
+
+    const bodyBg = document.querySelector('.offScroll');
+    bodyBg.classList.remove('showOnScroll');
+  
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          bodyBg.classList.add('showOnScroll');
+          return;
+        }
+  
+        bodyBg.classList.remove('showOnScroll');
+      });
+    });
+  
+    observer.observe(document.querySelector('.offScroll'));
+  });
+
 export function Contact() {
     return (
-        <section className="bodySpace" id="contact">
+        <section className="bodySpace offScroll showOnScroll" id="contact">
                 <div className="row">
                     <div className="col-sm-3">
                         <p className="sectionTitle" id="smallTitle">Contact</p>
