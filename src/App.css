@@ -13,6 +13,7 @@ nav {
   z-index: 1;
 }
 
+/* main image */
 #headerPic {
   height: auto;
   width:100%;
@@ -20,17 +21,19 @@ nav {
   position: relative;
 }
 
+/* section spacing and borders */
 .bodySpace {
-margin: 100px 0;
-border-top: 5px double black;
-padding: 30px 0;
+  margin: 100px 0;
+  border-top: 5px double black;
+  padding: 30px 0;
 }
 
+/* pushing content down for spacing */
 #work {
   margin-top: -30%;
 }
 
-
+/* scroll indicator */
 .scroll-text {
   color:rgb(217, 142, 172);
   position: absolute;
@@ -39,6 +42,7 @@ padding: 30px 0;
   border: 1px solid rgb(217, 142, 172);
 }
 
+/* fade in background color */
 .bodyBg {
   position: absolute;
   top:120%;
@@ -49,6 +53,7 @@ padding: 30px 0;
   z-index: -1;
 }
 
+/* creating fade in */
 .offScroll {
   opacity: 0;
 }
@@ -68,6 +73,7 @@ padding: 30px 0;
   transform: none;
 }
 
+/* situating section titles */
 .sectionTitle {
 font-size:5rem;
 writing-mode:vertical-rl;
@@ -75,22 +81,33 @@ text-orientation:sideways-right;
 transform: rotate(180deg)
 }
 
-.workImage {
-height:auto;
-width:100%;
+/* work image gallery */
+
+/* .workImage {
+height:450px;
+width:800px;
 margin: 5px;
+} */
 
+.frame {
+  height:450px;
+  width:800px;
+  overflow:hidden;
+  margin: 15px 0;
 }
 
-.zoom {
-  transition: transform 1s, filter 1s ease-in-out;
-  transform-origin: center center;  
-  filter:brightness(100%);
+.zoom img{
+  transition: transform 1s ease-in-out;
+  /* transform-origin: center center;   */
 }
 
-.zoom:hover {
-  transform: scale(1.3); 
-  filter:brightness(25%);
+.zoom:hover .imageText{
+  opacity:1;
+}
+
+.zoom img:hover {
+  transform: scale(1.3);
+  opacity:1;
 }
 
 .imageTextControl {
@@ -100,20 +117,35 @@ margin: 5px;
 .imageText {
     position:relative;
     color:white;
+    background-color: rgb(33, 37, 41, 0.8);
     transition: opacity 1s ease-in-out;
     opacity:0;
+    margin-top: -240px;
+    margin-left:20px;
+    width:90%;
+    text-align:center;
 }
 
-.imageText:hover {
-  opacity:1;
+/* about styling */
+
+.aboutText {
+  font-size:1.2em;
 }
 
+.responsive {
+  min-width:200px;
+  max-width:100%;
+  height:auto;
+}
+
+/* contact list styling */
 .contactList {
   font-size:2em;
   list-style: none;
   color:black;
 }
 
+/* link customization */
 a:link, a:visited {
   color: black;
   text-decoration: none; 
@@ -121,15 +153,23 @@ a:link, a:visited {
 
 
 a:hover, a:active {
-  color:white;
-  text-decoration: none;
+  color:white!important;
 }
 
+/* footer styling */
 footer{
 text-align: center;
 margin-top:225px;
 border-top: 5px double black;
+}
 
+
+/* sizing for responsiveness */
+@media screen and (max-width: 1300px) {
+  .bodyBg {
+    top:100%;
+    height:350%;
+  }
 }
 
 @media screen and (max-width: 1000px) {
@@ -139,14 +179,14 @@ border-top: 5px double black;
 
   .bodyBg {
     top:90%;
-    height:250%;
+    height:400%;
   }
 }
 
 @media screen and (max-width: 900px) {
   .bodyBg {
     top:80%;
-    height:250%;
+    height:350%;
   }
 }
 
@@ -160,7 +200,7 @@ border-top: 5px double black;
 
     .bodyBg {
       top:60%;
-      height:250%;
+      height:370%;
     }
     
     #smallTitle {
@@ -176,7 +216,8 @@ border-top: 5px double black;
     }
 
     .bodyBg {
-      height:400%;
+      top:60%;
+      height:520%;
     }
 
     #smallTitle {
@@ -189,7 +230,7 @@ border-top: 5px double black;
 @media screen and (max-width: 500px) {
   .bodyBg {
     top:50%;
-    height:500%;
+    height:550%;
   }
 }
 
