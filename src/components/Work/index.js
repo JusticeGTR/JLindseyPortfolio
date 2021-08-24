@@ -45,7 +45,7 @@ export function Work() {
                             <div className="col-sm-6 zoom frame" >
                                 <a href="https://github.com/jjayjack/FoodiesUnite" target="_blank" rel="noreferrer nofollow" >
                                     <img src={eats} alt="" className="workImage" />
-                                    <p className="imageText">A webapp made by myself and a team of 4 others. We created it as a way to search the city you live in to find any restaurants based on any search inquiery. Currently it's only for Chicago, but in the long term, we would want to add the ability to search any city. Complete with the ability to sign up for your own account, as well as log in and out. We used React, Javascript, CSS, Foursquare, Bootstrap, Mongoose, Express, Axios, and more.</p>
+                                    <p className="imageText">A webapp made by myself and a team of 4 others. We created it as a way to search the city you live in to find any restaurants based on any search inquiry. Currently it's only for Chicago, but in the long term, we would want to add the ability to search any city. Complete with the ability to sign up for your own account, as well as log in and out. We used React, Javascript, CSS, Foursquare, Bootstrap, Mongoose, Express, Axios, and more.</p>
                                 </a>
                             </div>
                             <div className="col-sm-6 zoom frame">
