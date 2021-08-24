@@ -13,7 +13,6 @@ export function Navbar() {
             <a className="nav-link" href="#work">Work <span className="sr-only">(current)</span></a>
             <a className="nav-link" href="#about">About</a>
             <a className="nav-link" href="#contact">Contact</a>
-            <a className="nav-link" href="#resume">Resume</a>
           </div>
         </div>
       </nav>
